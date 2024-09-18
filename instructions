@@ -1,0 +1,16 @@
+Explanation
+Data Scraping: The scrape_tweets function scrapes tweets containing a specified keyword using Tweepy. It then performs sentiment analysis on each tweet using TextBlob and returns a DataFrame containing tweets and their sentiment polarity.
+Data Preprocessing: The clean_text function removes URLs, special characters, and converts text to lowercase. The Bag of Words model (CountVectorizer) converts the text into numerical form.
+Model Training: A logistic regression model is trained on the vectorized text data and sentiment labels to predict stock movement direction.
+Evaluation: The model is evaluated using accuracy, precision, and recall metrics.
+
+
+Next Steps
+Data Source: Integrate data scraping from other platforms like Reddit or Telegram.
+Advanced Models: Use more sophisticated models (e.g., LSTM, Transformers) for better accuracy.
+Feature Engineering: Include more features, such as frequency of stock mentions, context, etc.
+
+
+Note
+Replace 'YOUR_API_KEY', 'YOUR_API_SECRET_KEY', etc., with your Twitter developer credentials.
+For large-scale data, use advanced NLP preprocessing techniques and models like BERT.
